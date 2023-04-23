@@ -47,6 +47,9 @@ var createNewTaskElement=function(taskString){
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
+    listItem.classList.add("todo-element__task");
+    checkBox.classList.add("todo-element__checkbox");
+
 
     //and appending.
     listItem.appendChild(checkBox);
@@ -155,7 +158,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
+    var checkBox=taskListItem.querySelector(".todo-element__checkbox");
     var editButton=taskListItem.querySelector(".todo-element__edit");
     var deleteButton=taskListItem.querySelector(".todo-element__delete");
 
