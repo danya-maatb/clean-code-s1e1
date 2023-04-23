@@ -132,7 +132,7 @@ button:hover {
 
 /* Completed */
 #todo-list__todo-element_completed .todo-element__task-name{
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
