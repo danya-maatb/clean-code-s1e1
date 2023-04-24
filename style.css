@@ -4,47 +4,59 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .matrix-info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .matrix-info__image {
   width: 100%;
 }
+
 .matrix-info .matrix-info__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .matrix-info {
     text-align: center;
   }
+
 }
+
 .todo-list-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.todo-element__task-name{
+
+.todo-element__task-name {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .todo-element__wrapper {
   display: flex;
 }
+
 .todo-list__todo-element {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
+
 .todo-element__task, h3 {
-  list-style:none;
+  list-style: none;
 }
+
 input,button{
-  outline:none;
+  outline: none;
 }
+
 button {
   background: none;
   border: 0px;
@@ -54,9 +66,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 
 .todo-element__heading {
@@ -68,6 +82,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
+
 .todo-element__task-name_input,
 .editMode .todo-element__task-name {
   margin: 0;
@@ -81,6 +96,7 @@ button:hover {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .todo-element__task-name_input:focus,
 .todo-element__task-name:focus  {
   color: #333;
@@ -91,6 +107,7 @@ button:hover {
   display: block;
   margin: 0 0 20px;
 }
+
 .todo-element__task-name_input {
   width: 418px;
 }
@@ -105,6 +122,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .todo-element__task > * {
   vertical-align: middle;
 }
@@ -112,20 +130,24 @@ button:hover {
 .todo-element__task > .todo-element__checkbox {
   margin: 0 10px;
 }
+
 .todo-element__task > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .todo-element__task > input[type="text"] {
   width: 226px
 }
+
 .todo-element__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .todo-element__delete img:hover {
   transform: rotateZ(0);
 }
@@ -138,14 +160,14 @@ button:hover {
 
 /* Edit Task */
 .todo-list__todo-element .todo-element__task input[type=text] {
-  display:none
+  display: none
 }
 
 .todo-list__todo-element .todo-element__task.editMode input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .todo-list__todo-element .todo-element__task.editMode label {
-  display:none;
+  display: none;
 }
