@@ -141,7 +141,7 @@ button:hover {
 }
 
 .todo-element__task > input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 .todo-element__delete img {
@@ -162,12 +162,12 @@ button:hover {
 
 /* Edit Task */
 .todo-list__todo-element .todo-element__task input[type=text] {
-  display: none
+  display: none;
 }
 
 .todo-list__todo-element .todo-element__task.editMode input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .todo-list__todo-element .todo-element__task.editMode label {
